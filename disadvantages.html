@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disadvantages - Click with Care</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+      <a href="index.html">Home</a>
+      <a href="advantages.html">Advantages</a>
+      <a href="disadvantages.html" class="active">Disadvantages</a>
+      <a href="tips.html">Tips</a>
+      <a href="about.html">About & Contact</a>
+      <a href="quiz.html">Reflection / Quiz</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
 
+  <main class="disadvantages-page">
+    <h1>Disadvantages of Mobile Phones</h1>
+    <p class="subtitle">Understand the darker side of overuse and misuse</p>
+
+    <div class="accordion">
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <h2>⚠️ Health Risks</h2>
+        <ul class="accordion-content">
+          <li>Eye strain & vision issues</li>
+          <li>Neck & back pain from posture</li>
+          <li>Sleep disturbance from blue light</li>
+          <li>Increased stress & anxiety</li>
+          <li>Radiation concerns</li>
+          <li>Reduced physical activity</li>
+          <li>Disrupted concentration</li>
+          <li>Mental fatigue</li>
+        </ul>
+      </div>
+
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <h2>🔒 Privacy Issues</h2>
+        <ul class="accordion-content">
+          <li>Data leaks & breaches</li>
+          <li>Location tracking</li>
+          <li>App permissions misuse</li>
+          <li>Identity theft risk</li>
+          <li>Hidden cameras & spyware</li>
+          <li>Listening via microphone</li>
+          <li>Weak passwords vulnerability</li>
+          <li>Third-party data selling</li>
+        </ul>
+      </div>
+
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <h2>🕒 Time Wastage</h2>
+        <ul class="accordion-content">
+          <li>Mindless scrolling</li>
+          <li>Game & app addiction</li>
+          <li>Reduced productivity</li>
+          <li>Procrastination habits</li>
+          <li>Shortened attention span</li>
+          <li>Distraction during study/work</li>
+          <li>Excessive social media time</li>
+          <li>Disrupted sleep schedule</li>
+        </ul>
+      </div>
+
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <h2>🤝 Social Impact</h2>
+        <ul class="accordion-content">
+          <li>Less face-to-face interaction</li>
+          <li>Isolation & loneliness</li>
+          <li>Superficial online connections</li>
+          <li>Cyberbullying risk</li>
+          <li>Comparing with others</li>
+          <li>Family time reduction</li>
+          <li>Reduced empathy</li>
+          <li>Echo chambers effect</li>
+        </ul>
+      </div>
+
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <h2>💰 Financial Cost</h2>
+        <ul class="accordion-content">
+          <li>Expensive devices</li>
+          <li>Costly repairs</li>
+          <li>High data plans</li>
+          <li>Paid apps & subscriptions</li>
+          <li>Frequent upgrades</li>
+          <li>Impulse purchases via ads</li>
+          <li>Gaming microtransactions</li>
+          <li>Accessory spending</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Click with Care
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      var icon = document.querySelector('.menu-icon');
+      menu.classList.toggle('show');
+      icon.classList.toggle('active');
+    }
+
+    function toggleAccordion(item) {
+      item.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
