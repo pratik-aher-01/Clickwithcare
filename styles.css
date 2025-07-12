@@ -255,3 +255,68 @@ footer {
   font-size: 18px;
   margin-bottom: 30px;
 }
+/* Disadvantages page specific style */
+.disadvantages-page h1 {
+  text-align: center;
+  color: #ff3300;
+  font-size: 36px;
+  margin-top: 80px;
+  text-shadow: 0 0 10px #ff3300;
+}
+
+.disadvantages-page .subtitle {
+  text-align: center;
+  color: #aaa;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.disadvantages-page .accordion-item {
+  background: rgba(255, 51, 0, 0.1);
+  border: 1px solid #ff3300;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.disadvantages-page .accordion-item:hover {
+  box-shadow: 0 0 15px #ff3300;
+  transform: translateY(-2px);
+}
+
+.disadvantages-page .accordion-item h2 {
+  font-size: 20px;
+  margin: 0;
+  padding: 15px;
+  color: #ff3300;
+  text-shadow: 0 0 5px #ff3300;
+}
+
+.disadvantages-page .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  padding: 0 15px;
+  list-style: none;
+  margin: 0;
+}
+
+.disadvantages-page .accordion-content li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 51, 0, 0.2);
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.disadvantages-page .accordion-content li:last-child {
+  border-bottom: none;
+}
+
+.disadvantages-page .accordion-item.open .accordion-content {
+  max-height: 500px;
+  opacity: 1;
+  padding-bottom: 10px;
+}
