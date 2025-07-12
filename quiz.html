@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflection & Quiz - Click with Care</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+      <a href="index.html">Home</a>
+      <a href="advantages.html">Advantages</a>
+      <a href="disadvantages.html">Disadvantages</a>
+      <a href="tips.html">Tips</a>
+      <a href="about.html">About & Contact</a>
+      <a href="quiz.html" class="active">Reflection & Quiz</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
 
+  <main class="quiz-page">
+    <h1>Reflection & Quiz</h1>
+    <p class="subtitle">Discover your habits & test what you’ve learned</p>
+
+    <div class="test-block reflection-block">
+      <h2>📱 Self-Reflection Test</h2>
+      <p>Want to know if you might be overusing your phone?</p>
+      <button onclick="showReflectionTest()" class="blue-btn">Take Reflection Test</button>
+
+      <div id="reflectionTest" class="hidden">
+        <form id="reflectionForm">
+          <p>Answer yes or no:</p>
+          <div class="question">1. Do you check your phone first thing in the morning?</div>
+          <label><input type="radio" name="q1" value="yes"> Yes</label>
+          <label><input type="radio" name="q1" value="no"> No</label>
+
+          <div class="question">2. Do you feel anxious without your phone?</div>
+          <label><input type="radio" name="q2" value="yes"> Yes</label>
+          <label><input type="radio" name="q2" value="no"> No</label>
+
+          <div class="question">3. Do you often lose track of time while using your phone?</div>
+          <label><input type="radio" name="q3" value="yes"> Yes</label>
+          <label><input type="radio" name="q3" value="no"> No</label>
+
+          <div class="question">4. Do you check notifications constantly?</div>
+          <label><input type="radio" name="q4" value="yes"> Yes</label>
+          <label><input type="radio" name="q4" value="no"> No</label>
+
+          <div class="question">5. Do you use your phone during meals?</div>
+          <label><input type="radio" name="q5" value="yes"> Yes</label>
+          <label><input type="radio" name="q5" value="no"> No</label>
+
+          <div class="question">6. Do you feel bored without your phone?</div>
+          <label><input type="radio" name="q6" value="yes"> Yes</label>
+          <label><input type="radio" name="q6" value="no"> No</label>
+
+          <div class="question">7. Do you use your phone before bed?</div>
+          <label><input type="radio" name="q7" value="yes"> Yes</label>
+          <label><input type="radio" name="q7" value="no"> No</label>
+
+          <div class="question">8. Does your phone distract you from work or study?</div>
+          <label><input type="radio" name="q8" value="yes"> Yes</label>
+          <label><input type="radio" name="q8" value="no"> No</label>
+
+          <div class="question">9. Do you get upset when your phone battery dies?</div>
+          <label><input type="radio" name="q9" value="yes"> Yes</label>
+          <label><input type="radio" name="q9" value="no"> No</label>
+
+          <div class="question">10. Do you scroll mindlessly when bored?</div>
+          <label><input type="radio" name="q10" value="yes"> Yes</label>
+          <label><input type="radio" name="q10" value="no"> No</label>
+
+          <button type="button" onclick="checkReflection()" class="blue-btn">Submit Reflection</button>
+        </form>
+        <div id="reflectionResult" class="result hidden"></div>
+      </div>
+    </div>
+
+    <div class="test-block quiz-block">
+      <h2>🧠 Quiz Test</h2>
+      <p>Test your knowledge on mindful phone use</p>
+      <button onclick="showQuiz()" class="purple-btn">Take Quiz</button>
+
+      <div id="quizTest" class="hidden">
+        <form id="quizForm">
+          <div class="question">1. What mode helps protect your eyes at night?</div>
+          <label><input type="radio" name="qz1" value="night"> Night mode</label>
+          <label><input type="radio" name="qz1" value="flight"> Flight mode</label>
+
+          <div class="question">2. Should you use your phone before bed?</div>
+          <label><input type="radio" name="qz2" value="no"> No</label>
+          <label><input type="radio" name="qz2" value="yes"> Yes</label>
+
+          <div class="question">3. What should you limit daily?</div>
+          <label><input type="radio" name="qz3" value="scroll"> Mindless scrolling</label>
+          <label><input type="radio" name="qz3" value="calls"> Important calls</label>
+
+          <div class="question">4. Using phone during meals is...</div>
+          <label><input type="radio" name="qz4" value="bad"> Distracting</label>
+          <label><input type="radio" name="qz4" value="good"> Helpful</label>
+
+          <div class="question">5. Turning off notifications helps you...</div>
+          <label><input type="radio" name="qz5" value="focus"> Focus better</label>
+          <label><input type="radio" name="qz5" value="miss"> Miss everything</label>
+
+          <button type="button" onclick="checkQuiz()" class="purple-btn">Submit Quiz</button>
+        </form>
+        <div id="quizResult" class="result hidden"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Click with Care
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      var icon = document.querySelector('.menu-icon');
+      menu.classList.toggle('show');
+      icon.classList.toggle('active');
+    }
+
+    function showReflectionTest() {
+      document.getElementById('reflectionTest').classList.toggle('hidden');
+    }
+
+    function showQuiz() {
+      document.getElementById('quizTest').classList.toggle('hidden');
+    }
+
+    function checkReflection() {
+      const form = document.getElementById('reflectionForm');
+      let yesCount = 0;
+      for (let i=1; i<=10; i++) {
+        const answer = form['q'+i].value;
+        if (answer === 'yes') yesCount++;
+      }
+      let feedback = "";
+      if (yesCount <=3) feedback = "Low risk: Great job!";
+      else if (yesCount <=6) feedback = "Moderate risk: Try to cut down your phone use.";
+      else feedback = "High risk: Consider serious phone detox.";
+
+      const result = document.getElementById('reflectionResult');
+      result.innerHTML = `<strong>You answered yes to ${yesCount}/10.</strong> ${feedback}`;
+      result.classList.remove('hidden');
+    }
+
+    function checkQuiz() {
+      const form = document.getElementById('quizForm');
+      let score = 0;
+      if (form.qz1.value === 'night') score++;
+      if (form.qz2.value === 'no') score++;
+      if (form.qz3.value === 'scroll') score++;
+      if (form.qz4.value === 'bad') score++;
+      if (form.qz5.value === 'focus') score++;
+
+      const result = document.getElementById('quizResult');
+      result.innerHTML = `<strong>You got ${score}/5 correct!</strong> Keep learning and stay mindful.`;
+      result.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
