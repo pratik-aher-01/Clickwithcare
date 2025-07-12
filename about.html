@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Click with Care</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <nav id="menu" class="hidden">
+      <a href="index.html">Home</a>
+      <a href="advantages.html">Advantages</a>
+      <a href="disadvantages.html">Disadvantages</a>
+      <a href="tips.html">Tips</a>
+      <a href="about.html" class="active">About & Contact</a>
+      <a href="quiz.html">Reflection / Quiz</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
 
+  <main class="about-section">
+    <h1>About Click with Care</h1>
+    <p>
+      Click with Care is a youth-driven website created as part of a CEP project, aiming to help society rethink the way we use mobile phones. 
+      With growing concerns about digital addiction and misuse, this project encourages balanced, mindful, and conscious use of technology 
+      — especially among youth. By exploring the advantages, disadvantages, and practical tips, users can become more aware of their digital habits.
+    </p>
+    <h2>Why this matters</h2>
+    <p>
+      In today’s hyper-connected world, smartphones have become both a necessity and a source of distraction. 
+      Our mission is to inspire people to use their phones responsibly, recognizing both their power and their pitfalls.
+    </p>
+  </main>
+
+  <footer>
+    © 2025 Click with Care
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
