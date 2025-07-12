@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery & News - Click with Care</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+      <a href="index.html">Home</a>
+      <a href="advantages.html">Advantages</a>
+      <a href="disadvantages.html">Disadvantages</a>
+      <a href="tips.html">Tips</a>
+      <a href="quiz.html">Reflection & Quiz</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="about.html">About & Contact</a>
+    </nav>
+  </header>
 
+  <main class="gallery-page">
+    <h1>Gallery & News</h1>
+    <p class="subtitle">Explore 2025's latest news and real data about mobile addiction</p>
+
+    <section class="news-section">
+      <h2>📢 Latest News & Trends – 2025</h2>
+      <button class="cyan-btn" onclick="startNews()">Show Latest News</button>
+      <div id="newsContainer" class="news-container hidden">
+        <div class="news falling">2025: Average daily screen time hits record high</div>
+        <div class="news falling">India reports 35% rise in social media addiction</div>
+        <div class="news falling">Global teens check phones 100+ times/day</div>
+        <div class="news falling">Study links phone overuse to poor sleep</div>
+        <div class="news falling">75% of youth use phones past midnight</div>
+        <div class="news falling">Social media apps top the addiction chart</div>
+        <div class="news falling">2025: Digital detox retreats gain popularity</div>
+        <div class="news falling">Mobile gaming rises among 18-24 age group</div>
+        <div class="news falling">Survey: 40% feel anxious without phones</div>
+        <div class="news falling">Mindful phone use apps see 60% growth</div>
+      </div>
+    </section>
+
+    <section class="data-gallery">
+      <h2>📊 Real Data & Charts</h2>
+      <div class="gallery-grid">
+        <div class="card">
+          <img src="images/youth-addiction.jpg" alt="Youth addiction graph">
+          <p>Increase in mobile addiction among youth (2015–2025)</p>
+        </div>
+        <div class="card">
+          <img src="images/india-addiction.jpg" alt="Indian youth data">
+          <p>Indian youth: Avg screen time crossed 7 hours/day</p>
+        </div>
+        <div class="card">
+          <img src="images/global-use.jpg" alt="Global phone use by age">
+          <p>Global smartphone use by different age groups</p>
+        </div>
+        <div class="card">
+          <img src="images/sleep-impact.jpg" alt="Phone overuse impact on sleep">
+          <p>Effect of phone overuse on sleep quality</p>
+        </div>
+        <div class="card">
+          <img src="images/top-apps.jpg" alt="Top apps causing addiction">
+          <p>Top 5 apps leading to higher addiction rates</p>
+        </div>
+        <div class="card">
+          <img src="images/phone-pickups.jpg" alt="Daily phone pickups">
+          <p>Average daily phone pickups by youth</p>
+        </div>
+        <div class="card">
+          <img src="images/social-media-time.jpg" alt="Social media usage trends">
+          <p>Growth of social media usage (2010–2025)</p>
+        </div>
+        <div class="card">
+          <img src="images/global-addiction.jpg" alt="Countries most addicted">
+          <p>Top countries with highest smartphone addiction</p>
+        </div>
+        <div class="card">
+          <img src="images/urban-rural.jpg" alt="Urban vs rural data">
+          <p>Indian urban vs rural youth: phone use comparison</p>
+        </div>
+        <div class="card">
+          <img src="images/sleep-effect.jpg" alt="Overuse effect">
+          <p>Graph showing phone overuse affecting mental health</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Click with Care
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+
+    function startNews() {
+      document.getElementById('newsContainer').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
