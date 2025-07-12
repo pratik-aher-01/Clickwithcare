@@ -1,1 +1,164 @@
+/* style.css */
 
+/* General settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: #00ffff;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00ffff;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffffff;
+}
+
+nav.show {
+    display: flex;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    height: 200px;
+    background-color: #222;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+
+/* Hooks */
+.hooks {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.hook {
+    margin: 10px 0;
+    font-size: 18px;
+    animation: fadeIn 2s ease forwards;
+}
+
+/* Mission & Motto */
+.mission {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.mission h2 {
+    color: #00ffff;
+    margin-top: 20px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px;
+}
+
+.card {
+    background-color: #111;
+    border: 1px solid #00ffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px #00ffff33;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00ffff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #666;
+    border-top: 1px solid #222;
+    margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media(min-width: 600px) {
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        margin-left: auto;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .cards {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 10px;
+    }
+}
