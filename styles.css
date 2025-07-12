@@ -183,3 +183,75 @@ footer {
   50% { text-shadow: 0 0 20px #00ffff; }
   100% { text-shadow: 0 0 5px #00ffff; }
 }
+/* Accordion styles for advantages page */
+
+.accordion {
+  margin: 80px 20px 40px; /* space below header */
+}
+
+.accordion-item {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.accordion-item:hover {
+  box-shadow: 0 0 15px #00ffff;
+  transform: translateY(-2px);
+}
+
+.accordion-item h2 {
+  font-size: 20px;
+  margin: 0;
+  padding: 15px;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  padding: 0 15px;
+  list-style: none;
+  margin: 0;
+}
+
+.accordion-content li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.accordion-content li:last-child {
+  border-bottom: none;
+}
+
+/* When open, show content */
+.accordion-item.open .accordion-content {
+  max-height: 500px; /* large enough for 10 items */
+  opacity: 1;
+  padding-bottom: 10px;
+}
+
+/* Make sure the neon theme is consistent */
+.advantages-page h1 {
+  text-align: center;
+  color: #00ffff;
+  font-size: 36px;
+  margin-top: 80px;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.advantages-page .subtitle {
+  text-align: center;
+  color: #aaa;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
