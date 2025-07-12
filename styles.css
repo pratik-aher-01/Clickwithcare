@@ -24,9 +24,16 @@ header {
 }
 
 nav {
-    display: none;
-    flex-direction: column;
-    margin-left: 20px;
+  position: fixed;
+  top: 50px; /* just below the header */
+  left: 0;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.9);
+  border-right: 1px solid #00ffff;
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 1001;
 }
 
 nav a {
