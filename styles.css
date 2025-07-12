@@ -557,7 +557,9 @@ label {
   margin: 0 auto;
   text-align: center;
 }
-
+.hidden {
+  display: none;
+}
 .about-section h1 {
   color: #00ffff;
   font-size: 36px;
