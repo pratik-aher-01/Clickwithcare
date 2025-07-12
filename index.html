@@ -63,6 +63,13 @@
         menu.classList.toggle('hidden');
     }
 </script>
-
+<script>
+function toggleMenu() {
+    var menu = document.getElementById('menu');
+    var icon = document.querySelector('.menu-icon');
+    menu.classList.toggle('show');
+    icon.classList.toggle('active'); // add/remove the active class to trigger animation
+}
+</script>
 </body>
 </html>
