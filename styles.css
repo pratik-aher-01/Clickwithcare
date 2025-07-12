@@ -551,3 +551,28 @@ label {
 .news-container .news:nth-child(8) { animation-delay: 3.5s; }
 .news-container .news:nth-child(9) { animation-delay: 4s; }
 .news-container .news:nth-child(10) { animation-delay: 4.5s; }
+.about-section {
+  padding: 100px 20px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-section h1 {
+  color: #00ffff;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.about-section h2 {
+  color: #00ffff;
+  margin-top: 30px;
+  font-size: 28px;
+}
+
+.about-section p {
+  font-size: 18px;
+  margin: 15px 0;
+  line-height: 1.6;
+}
