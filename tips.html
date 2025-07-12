@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips - Click with Care</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+      <a href="index.html">Home</a>
+      <a href="advantages.html">Advantages</a>
+      <a href="disadvantages.html">Disadvantages</a>
+      <a href="tips.html" class="active">Tips</a>
+      <a href="about.html">About & Contact</a>
+      <a href="quiz.html">Reflection / Quiz</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
 
+  <main class="tips-page">
+    <h1>Tips for Mindful Phone Use</h1>
+    <p class="subtitle">Small changes can make a big difference</p>
+
+    <div class="tips-grid">
+      <div class="tip-card">
+        <h3>⏰ Set App Limits</h3>
+        <p>Limit daily usage of social media to avoid endless scrolling.</p>
+      </div>
+      <div class="tip-card">
+        <h3>📵 No Phone Zones</h3>
+        <p>Keep phones away from dining table and study area for better focus.</p>
+      </div>
+      <div class="tip-card">
+        <h3>🌙 Night Mode</h3>
+        <p>Use blue light filter or night mode after dark to protect your eyes.</p>
+      </div>
+      <div class="tip-card">
+        <h3>🛏️ Phone-Free Before Bed</h3>
+        <p>Switch off screens 30 minutes before sleep to improve rest quality.</p>
+      </div>
+      <div class="tip-card">
+        <h3>🔔 Turn Off Non-Essential Notifications</h3>
+        <p>Silence distractions so you stay in control, not your phone.</p>
+      </div>
+      <div class="tip-card">
+        <h3>📚 Learn, Don’t Just Scroll</h3>
+        <p>Follow pages or channels that teach skills or inspire you.</p>
+      </div>
+      <div class="tip-card">
+        <h3>💡 Track Your Screen Time</h3>
+        <p>Review weekly reports to see where your time really goes.</p>
+      </div>
+      <div class="tip-card">
+        <h3>👥 Connect in Real Life</h3>
+        <p>Use your phone to meet friends offline, not just online.</p>
+      </div>
+      <div class="tip-card">
+        <h3>✍️ Daily Reflection</h3>
+        <p>Spend a minute each night thinking about how you used your phone today.</p>
+      </div>
+      <div class="tip-card">
+        <h3>⚙️ Customize Your Home Screen</h3>
+        <p>Place useful apps in front and hide distracting ones deeper.</p>
+      </div>
+    </div>
+
+    <p class="closing-line">Mindful use keeps your phone as a tool, not a trap.</p>
+  </main>
+
+  <footer>
+    © 2025 Click with Care
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      var icon = document.querySelector('.menu-icon');
+      menu.classList.toggle('show');
+      icon.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
