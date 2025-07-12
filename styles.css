@@ -25,15 +25,20 @@ header {
 
 nav {
   position: fixed;
-  top: 50px; /* just below the header */
+  top: 50px;
   left: 0;
   width: 200px;
   background: rgba(0, 0, 0, 0.9);
   border-right: 1px solid #00ffff;
-  display: none;
   flex-direction: column;
   padding: 10px;
   z-index: 1001;
+  transform: translateX(-220px);
+  transition: transform 0.3s ease;
+}
+
+nav.show {
+  transform: translateX(0);
 }
 
 nav a {
