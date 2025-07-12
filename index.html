@@ -1,1 +1,69 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click with Care - Home</title><!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
+<!-- CSS -->
+<link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <!-- Header with hamburger menu -->
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav id="menu" class="hidden">
+            <a href="index.html" class="active">Home</a>
+            <a href="advantages.html">Advantages</a>
+            <a href="disadvantages.html">Disadvantages</a>
+            <a href="tips.html">Tips</a>
+            <a href="about.html">About & Contact</a>
+            <a href="quiz.html">Reflection / Quiz</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header><!-- Hero section -->
+<section class="hero">
+    <h1>Click with Care</h1>
+    <p class="subtitle">Helping society rethink the way we use mobile phones.</p>
+    <!-- AI Image placeholder -->
+    <div class="hero-image">[Your AI Image Here]</div>
+</section>
+
+<!-- Floating hooks -->
+<section class="hooks">
+    <p class="hook">Are you using your phone… or is your phone using you?</p>
+    <p class="hook">Swipe to find balance.</p>
+    <p class="hook">Discover the power and danger of your digital companion.</p>
+</section>
+
+<!-- Mission & Motto -->
+<section class="mission">
+    <h2>Our Mission</h2>
+    <p>To inspire mindful and balanced use of cellphones.</p>
+    <h2>Motto</h2>
+    <p>Click consciously. Live fully.</p>
+</section>
+
+<!-- Info cards -->
+<section class="cards">
+    <div class="card">📱 Learn the benefits</div>
+    <div class="card">⚠️ Understand the risks</div>
+    <div class="card">💡 Get practical tips</div>
+</section>
+
+<!-- Footer -->
+<footer>
+    © 2025 Click with Care
+</footer>
+
+<!-- JS for menu -->
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>
