@@ -113,11 +113,14 @@ nav.show {
 }
 
 /* Cards */
-.cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px 20px;
+.cards a {
+  text-decoration: none;       /* remove default underline */
+  color: #00ffff;              /* neon cyan text color */
+  font-weight: normal;
+}
+
+.cards a:hover {
+  color: #ffffff;              /* brighter on hover */
 }
 
 .card {
