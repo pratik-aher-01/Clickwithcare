@@ -111,7 +111,12 @@ nav.show {
     color: #00ffff;
     margin-top: 20px;
 }
-
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
 /* Cards */
 .cards a {
   text-decoration: none;       /* remove default underline */
