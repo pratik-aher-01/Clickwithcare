@@ -614,3 +614,11 @@ nav a:hover {
   border: 2px solid #00ffff; /* neon border like your theme */
   border-radius: 10px;
 }
+.home-image {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+}
