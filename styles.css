@@ -606,3 +606,11 @@ nav a:hover {
   color: #ffffff;
   font-weight: bold;
 }
+.home-image {
+  width: 100%;
+  max-width: 500px;  /* adjust as needed */
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #00ffff; /* neon border like your theme */
+  border-radius: 10px;
+}
