@@ -112,7 +112,26 @@
     function startNews() {
       document.getElementById('newsContainer').classList.remove('hidden');
     }
-  </script>
+    <script>
+  function toggleMenu() {
+    var menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+  }
+
+  function startNews() {
+    document.getElementById('newsContainer').classList.remove('hidden');
+  }
+
+  function openPopup(imgSrc, text) {
+    document.getElementById('popupImg').src = imgSrc;
+    document.getElementById('popupText').innerText = text;
+    document.getElementById('popup').classList.add('show');
+  }
+
+  function closePopup() {
+    document.getElementById('popup').classList.remove('show');
+  }
+    </script>
   <!-- Popup overlay -->
 <div id="popup" class="popup hidden">
   <span class="close-btn" onclick="closePopup()">✖</span>
