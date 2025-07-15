@@ -762,12 +762,11 @@ nav a:hover {
   text-align: center;
 }
 /* Popup overlay */
+/* Popup overlay */
 .popup {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background: rgba(0,0,0,0.8);
   display: flex;
   flex-direction: column;
@@ -796,16 +795,4 @@ nav a:hover {
   font-size: 30px;
   color: white;
   cursor: pointer;
-}
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 28px;
-  color: #00ffff;
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
 }
