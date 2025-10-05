@@ -813,3 +813,37 @@ header {
 .hidden {
   display: none;
 }
+/* Survey block style */
+.survey-block {
+  background: rgba(0, 0, 0, 0.85); /* slightly black */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Glow effect when cursor hovers */
+.survey-block:hover {
+  box-shadow: 0 0 20px 5px rgba(255, 165, 0, 0.8); /* neon orange glow */
+}
+
+/* Google Form button */
+.green-btn {
+  background-color: #ff7f00; /* neon orange */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(255,127,0,0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Neon glow on button hover */
+.green-btn:hover {
+  box-shadow: 0 0 20px 5px rgba(255, 127, 0, 0.9);
+}
