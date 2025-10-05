@@ -39,11 +39,19 @@
     © 2025 Click with Care
   </footer>
 
-  <script>
+   <script>
     function toggleMenu() {
-      var menu = document.getElementById("menu");
-      menu.classList.toggle("hidden");
+      document.getElementById('menu').classList.toggle('show');
+    }
+    function openPopup(imgSrc, text) {
+      document.getElementById('popupImg').src = imgSrc;
+      document.getElementById('popupText').innerText = text;
+      document.getElementById('popup').classList.remove('hidden');
+    }
+    function closePopup() {
+      document.getElementById('popup').classList.add('hidden');
     }
   </script>
+
 </body>
 </html>
