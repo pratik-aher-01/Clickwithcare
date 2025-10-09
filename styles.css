@@ -857,3 +857,6 @@ header {
 .accordion-content li {
   margin: 5px 0;
 }
+#menu, .menu-icon, nav {
+  border: none !important;
+}
