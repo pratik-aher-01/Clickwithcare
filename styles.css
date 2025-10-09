@@ -857,3 +857,11 @@ header {
 .accordion-content li {
   margin: 5px 0;
 }
+.menu-icon {
+  border: none;
+  outline: none;
+}
+
+#menu {
+  border: none;
+}
