@@ -847,3 +847,13 @@ header {
 .green-btn:hover {
   box-shadow: 0 0 20px 5px rgba(255, 127, 0, 0.9);
 }
+/* Center align accordion content */
+.accordion-content {
+  text-align: center;
+  list-style-position: inside;
+  padding: 0;
+}
+
+.accordion-content li {
+  margin: 5px 0;
+}
